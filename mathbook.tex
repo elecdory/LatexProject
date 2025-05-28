@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The MathBook
+% LaTeX Template
+% Version 1.0 (2024/06/XX)
+%
+% Based on main.tex and mathbook.cls
+% Author: Your Name
+% License: CC BY-NC-SA 4.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    11pt,
+    fleqn,
+    a4paper
+]{mathbook}
+\usepackage{kotex}
+
+\begin{document}
+
+% Book information for PDF metadata
+\hypersetup{
+    pdftitle={공통수학},
+    pdfauthor={장규만},
+    pdfsubject={Mathematics},
+    pdfkeywords={Mathematics, Theorem, Proof, Example},
+    pdfcreator={LaTeX},
+}
+
+%----------------------------------------------------------------------------------------
+%   TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries 공통수학\par}
+    \vspace{16pt}
+    {\LARGE A Modern Introduction\par}
+    \vspace{24pt}
+    {\huge\bfseries 장규만\par}
+    \vfill
+    {\large \today\par}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%   COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+~\vfill
+\noindent Copyright \copyright\ 2024 장규만\\
+\noindent \textsc{Published by UTOEDU}\\
+\noindent \url{https://www.example.com}\\
+\noindent Licensed under the Creative Commons Attribution-NonCommercial 4.0 License.\\
+\noindent \textit{First printing, June 2024}
+
+%----------------------------------------------------------------------------------------
+%   TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty}
+\tableofcontents
+\listoffigures
+\listoftables
+\pagestyle{fancy}
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%   PART
+%----------------------------------------------------------------------------------------
+
+\part{Preliminaries}
+
+%----------------------------------------------------------------------------------------
+%   SAMPLE CHAPTER
+%----------------------------------------------------------------------------------------
+
+\chapter{Numbers and Sets}
+
+\section{Natural Numbers}
+The set of natural numbers is denoted by $\mathbb{N} = \{0, 1, 2, \ldots\}$.
+
+\begin{theorem}[Well-Ordering Principle]
+Every non-empty subset of $\mathbb{N}$ has a least element.
+\end{theorem}
+
+\begin{proof}
+Suppose $S \subseteq \mathbb{N}$ is non-empty. ... (proof omitted)
+\end{proof}
+
+\begin{example}
+Let $S = \{n \in \mathbb{N} : n \geq 5\}$. The least element is $5$.
+\end{example}
+
+\section{Integers and Rational Numbers}
+The set of integers is $\mathbb{Z}$, and the set of rational numbers is $\mathbb{Q}$.
+
+\begin{definition}[Rational Number]
+A number $q$ is rational if $q = \frac{a}{b}$ for some $a \in \mathbb{Z}$, $b \in \mathbb{N}$, $b \neq 0$.
+\end{definition}
+
+\section{Exercises}
+\begin{exercise}
+Prove that the sum of two even numbers is even.
+\end{exercise}
+
+%----------------------------------------------------------------------------------------
+%   ANOTHER CHAPTER
+%----------------------------------------------------------------------------------------
+
+\chapter{Functions and Relations}
+
+\section{Functions}
+A function $f$ from $A$ to $B$ is a rule that assigns to each $a \in A$ exactly one $b \in B$.
+
+\begin{theorem}
+If $f: \mathbb{R} \to \mathbb{R}$ is continuous and $f(0) > 0$, then there exists $\varepsilon > 0$ such that $f(x) > 0$ for all $|x| < \varepsilon$.
+\end{theorem}
+
+\section{Examples}
+\begin{example}
+Let $f(x) = x^2 + 1$. Then $f(0) = 1 > 0$.
+\end{example}
+
+%----------------------------------------------------------------------------------------
+%   APPENDICES
+%----------------------------------------------------------------------------------------
+
+\begin{appendices}
+\chapter{Additional Proofs}
+\section{Proof of the Well-Ordering Principle}
+(Proof details...)
+\end{appendices}
+
+\end{document} 

@@ -1,0 +1,26 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+
+# PDF files
+*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor backup files
+*~
+*.bak 
